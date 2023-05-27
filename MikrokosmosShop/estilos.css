@@ -60,11 +60,6 @@ nav{
     transition: .3s;
 }
 
-.bar-btn{
-    font-size: 40px;
-    margin-left: 50px;
-}
-
 #check {
     display: none;
 }
@@ -162,6 +157,9 @@ li{
     font-size: 20px;
 }
 
+.formulario{
+
+}
 
 .text1{
     font-size: 30px;
@@ -209,6 +207,20 @@ option{
     transition: .5s ease all;
 }
 
+.form1{
+    margin-top: 140px;
+    margin-right: 540px;
+    position: absolute;
+}
+
+.form1{
+    border-radius: 6px;
+    padding: 10px;
+    height: auto;
+    width: 210px;
+    background-color:#c4c4c4;
+}
+
 .anunc{
     height: 200px;
     width: auto;
@@ -244,39 +256,31 @@ option{
     -webkit-text-stroke: 2px black;
 }
 
-.IgTit{
-    font-size: 25px;
-    margin: 10px;
-}
-
 @media (max-width: 1280px){
 
-    .cel1{
-        margin-left: 13%;
-        margin-bottom: 50px;
-    }
+.cel1{
+    margin-left: 13%;
+    margin-bottom: 50px;
+}
 
-    .anunc{
-        width: 800px;
-        height: 150px;
-    }
+.anunc{
+    width: 800px;
+    height: 150px;
+}
 
-    .Titulo{
-        font-size: 70%;
-        color: #f050ff;
-    }
+.Titulo{
+    font-size: 70%;
+    color: #f050ff;
+}
 
-    .s{
-        font-size: 70%;
-    }
+.s{
+    font-size: 70%;
+}
 
 }
 
 @media (max-width: 1000px){
 
-    .Foto{
-        height: 600px;
-    }
     
     .info{
         text-align:center;
@@ -317,109 +321,71 @@ option{
 
 @media (max-width: 730px){
 
-    .Foto{
-        height: 500px;
+.anunc{
+    width: 550px;
+    height: 80px;
     }
-
-    .anunc{
-        width: 550px;
-        height: 80px;
-        }
-    }
+}
 
 @media (max-width: 600px){
 
-    .cuadradoInt{
-        font-size: 18px;
-    }
-
-    .text1{
-        font-size: 24px;
-    }
-
-    .Foto{
-        height: 350px;
-    }
-
-
-    .info{
-        text-align:center;
-    }
-        
-    .cel1{
-        margin:0px auto;
-        width: 80%; 
-        margin-bottom: 50px;
-    }
-        
-    .cel2{
-        margin:0px auto;
-        width: 80%; 
-        margin-bottom: 50px;
-    }
-        
-    .cel3{
-        margin:0px auto;
-        width: 80%; 
-    }
-        
-    .cuadrado1{
-        width: 100%;    
-    }
-        
-    .anunc{
-        width: 400px;
-        height: 80px;
-    }
-        
-    .Titulo{
-        font-size: 43px;
-    }
-        
-    .s{
-        font-size: 43px;
-    }
-        
-    .inicio{
-        color: #f050ff;
-        padding-top: 1%;
-        padding-bottom: 4%;
-    }
-        
-    .form1{
-        margin-left: 300px;
-    }
-        
-    .formulario{
-        margin-left: 220px;
-    }
+.info{
+    text-align:center;
+}
     
-    }
+.cel1{
+    margin:0px auto;
+    width: 80%; 
+    margin-bottom: 50px;
+}
+    
+.cel2{
+    margin:0px auto;
+    width: 80%; 
+    margin-bottom: 50px;
+}
+    
+.cel3{
+    margin:0px auto;
+    width: 80%; 
+}
+    
+.cuadrado1{
+    width: 100%;    
+}
+    
+.anunc{
+    width: 400px;
+    height: 80px;
+}
+    
+.Titulo{
+    font-size: 43px;
+}
+    
+.s{
+    font-size: 43px;
+}
+    
+.inicio{
+    color: #f050ff;
+    padding-top: 1%;
+    padding-bottom: 4%;
+}
+    
+.form1{
+    margin-left: 300px;
+}
+    
+.formulario{
+    margin-left: 220px;
+}
+ 
+}
 
 @media (max-width: 470px){
 
-    .IgTit{
-        font-size: 20px;
+.form1{
+    margin-left: 325px;
     }
-
-    .bar-btn{
-        margin-left: 8px;
-    }
-
-    .cuadradoInt{
-        font-size: 15px;
-    }
-
-    .anunc{
-        width: 340px;
-        height: 60px;
-    }
-
-    .Foto{
-        height: 300px;
-    }
-
-    .form1{
-        margin-left: 325px;
-        }
 }
