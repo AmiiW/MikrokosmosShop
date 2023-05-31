@@ -7,6 +7,7 @@
 }
 
 .Foto{
+    transform: translate(0px, 10%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,6 +29,7 @@ nav{
     font-size:25px;
     color: #fae5f1;
     margin-right: 20px;
+    margin-top: 20px;
     cursor: pointer;
     text-shadow: 1px 1px 1px #000000;
 }
@@ -70,6 +72,8 @@ nav{
 }
 
 #check:checked ~ .nav-menu {
+    transform: translateX(0%);
+    transition: all 0.5s;
     height: 100vh;
 }
 
@@ -81,7 +85,8 @@ nav{
 
 .TituloTienda{
     font-size: 30px;
-    margin-right: 290px;;
+    padding-top: 50px;
+    padding-right: 8%; 
 }
 
 body{
@@ -104,13 +109,17 @@ body{
     color: #a537ff;
 }
 
-.info{    
+.info{ 
     /* display: flex; */
     text-align: center;
     margin-top: 5%;
     margin-bottom: 5%;
-    overflow: hidden;
-    padding-left: 15%;
+    overflow:hidden;
+    padding-left: 7%;
+}
+
+.todo{
+    
 }
 
 .cel1{
@@ -120,7 +129,7 @@ body{
     padding-top: 20px;
     width: 330px;
     border-radius: 10px;
-    float: left;
+    /*float: left;*/
     margin-top: 50px;
 }
 
@@ -156,9 +165,9 @@ li{
 
 .cuadrado1{
     display: flex;
-    border-top: 5px solid #a7a7a7;
+    border-top: 5px solid #000000;
     justify-content: center;
-    background-color: rgb(226, 226, 226);
+    background-color: #fae5f1;
     font-size: 20px;
 }
 
@@ -276,6 +285,7 @@ option{
 
     .Foto{
         height: 600px;
+        transform: translate(0px, 15%);
     }
     
     .info{
@@ -344,23 +354,13 @@ option{
 
     .info{
         text-align:center;
+        padding-left: 0%;
     }
         
     .cel1{
         margin:0px auto;
         width: 80%; 
         margin-bottom: 50px;
-    }
-        
-    .cel2{
-        margin:0px auto;
-        width: 80%; 
-        margin-bottom: 50px;
-    }
-        
-    .cel3{
-        margin:0px auto;
-        width: 80%; 
     }
         
     .cuadrado1{
@@ -403,7 +403,7 @@ option{
     }
 
     .bar-btn{
-        margin-left: 8px;
+        margin-left: 30px;
     }
 
     .cuadradoInt{
