@@ -7,6 +7,7 @@
 }
 
 .Foto{
+    margin-top: 6%;
     transform: translate(0px, 10%);
     display: flex;
     justify-content: center;
@@ -14,78 +15,84 @@
     height: 800px; 
 }
 
+nav{
+    width: 20px;
+}
+
+.todo2{
+    position: absolute;
+    z-index:1;
+    transform: translate(170px, 162px);
+    font-size: 30px;
+}
+
+tit{
+    font-size: 23px;
+}
+
 /* Menu */ 
 
-nav{
-    font-size: 30px;
-    height: 100px;
-    width: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.btn-menu{
+    text-shadow: 1px 1px 1px #df5ea7;
 }
 
-.bar-btn{
-    font-size:25px;
-    color: #fae5f1;
-    margin-right: 20px;
-    margin-top: 20px;
-    cursor: pointer;
-    text-shadow: 1px 1px 1px #000000;
-}
-
-.nav-menu{
-    text-align:center;
-    position: fixed;
-    width: 8%;
-    top: 100px;
-    background: #fae5f1;
-    transition: all .5s;
-}
-
-.nav-menu li{
-    display: none;
-    line-height: 30px;
-    margin: 50px 0;
-    transition: all .5%;
-}
-
-.nav-menu li a {
-    color: #000000;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-.nav-menu li a.active, .nav-menu li a:hover{
-    color: #a537ff;
-    transition: .3s;
-}
-
-.bar-btn{
-    font-size: 40px;
-    margin-left: 50px;
-}
-
-#check {
+#btn-menu{
     display: none;
 }
-
-#check:checked ~ .nav-menu {
+.container-menu{
+    position: absolute;
+    background: #b465a38e;
+    width: 125%;
+    height: 77vh;
+    top: 0;left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 125%;
+    max-width: 250px;
+    background: #b465a3;
+    height: 77vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
     transform: translateX(0%);
-    transition: all 0.5s;
-    height: 100vh;
 }
-
-#check:checked ~ .nav-menu li {
+.cont-menu nav{
+    transform: translateY(15%);
+}
+.cont-menu nav a{
     display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #fae5f1;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+    border-left: 30px solid #000000;
+}
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
 }
 
 /* Fin del Menu */
 
 .TituloTienda{
     font-size: 30px;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-right: 8%; 
 }
 
@@ -95,6 +102,7 @@ body{
 }
 
 .inicio{
+    transform: translate(0px, -15%);
     border-bottom: 5px solid #000000;
     /* background-color: rgb(226, 226, 226); */
     font-family: "Comic Sans MS";
@@ -112,7 +120,6 @@ body{
 .info{ 
     /* display: flex; */
     text-align: center;
-    margin-top: 5%;
     margin-bottom: 5%;
     overflow:hidden;
     padding-left: 7%;
@@ -258,30 +265,87 @@ option{
     margin: 10px;
 }
 
-@media (max-width: 1280px){
+@media (max-width: 1526px){
+    
+    .todo2{
+        transform: translate(110px, 162px);  
+    }
+
+    .TituloTienda{
+        margin-left: 8%;
+    }
 
     .cel1{
-        margin-left: 13%;
+        margin: 2%; 
         margin-bottom: 50px;
     }
 
-    .anunc{
-        width: 800px;
-        height: 150px;
+    .info{
+        margin-right: 8%;
+        text-align:center;
     }
 
-    .Titulo{
-        font-size: 70%;
-        color: #f050ff;
+}
+
+@media (max-width: 1280px){
+
+    .todo2{
+        transform: translate(25px, 162px);  
     }
 
-    .s{
-        font-size: 70%;
+    .bar-btn{
+        padding-top: 60px;
+        margin-left: 50px;
+    }
+
+}
+
+@media (max-width: 1120px){
+    
+    .todo2{
+        font-size: 40px;
+        transform: translate(40px, 80px);  
+    }
+
+    .container-menu{
+        width: 100%;
+        height: 75vh;
+    }
+
+    .cont-menu{
+        width: 130%;
+        height: 75vh;
     }
 
 }
 
 @media (max-width: 1000px){
+
+    .todo2{
+        font-size: 32px;
+        transform: translate(40px, 80px);  
+    }
+
+    .container-menu{
+        width: 120%;
+        height: 67vh;
+    }
+
+    .cont-menu{
+        width: 130%;
+        height: 67vh;
+    }
+
+    .TituloTienda{
+        text-decoration: underline #fae5f1;
+        margin-bottom: 6%;
+        margin-left: 6.7%;
+    }
+
+    .cel1{
+        margin: 0.5%; 
+        margin-bottom: 50px;
+    }
 
     .Foto{
         height: 600px;
@@ -289,24 +353,13 @@ option{
     }
     
     .info{
+        margin-right: 6.4%;
         text-align:center;
-    }
-    .cel1{
-        margin-left: 13%;
-        width: 240px;
     }
     
     .img1{
         border-radius: 10px;
         height: 250px;
-    }
-    
-    .cel2{
-        width: 240px;
-    }
-    
-    .cel3{
-        width: 240px;
     }
     
     .anunc{
@@ -323,9 +376,34 @@ option{
         font-size: 35%;
     }
     
+    .bar-btn{
+        padding-top: 30px;
+        margin-left: 30px;
+    }
+
     }
 
 @media (max-width: 730px){
+
+    .todo2{
+        font-size: 25px;
+        transform: translate(25px, 60px);  
+    }
+
+    .container-menu{
+        width: 120%;
+        height: 57vh;
+    }
+
+    .cont-menu{
+        width: 130%;
+        height: 57vh;
+    }
+
+    .bar-btn{
+        padding-top: 10px;
+        margin-left: 20px;
+    }
 
     .Foto{
         height: 500px;
@@ -339,6 +417,36 @@ option{
 
 @media (max-width: 600px){
 
+    tit{
+        color: #fff;
+        text-shadow: none;
+    }
+
+    .btn-menu{
+        color: #000000;
+        font-size: 30px;
+    }
+
+    .todo2{
+        font-size: 16px;
+        transform: translate(25px, 75px);  
+    }
+
+    .container-menu{
+        width: 120%;
+        height: 48vh;
+    }
+
+    .cont-menu{
+        width: 130%;
+        height: 48vh;
+    }
+
+    .bar-btn{
+        padding-top: 50px;
+        margin-left: 30px;
+    }
+
     .cuadradoInt{
         font-size: 18px;
     }
@@ -351,15 +459,13 @@ option{
         height: 350px;
     }
 
-
     .info{
         text-align:center;
-        padding-left: 0%;
+        padding-left: 7%;
     }
         
     .cel1{
-        margin:0px auto;
-        width: 80%; 
+        margin:0px auto; 
         margin-bottom: 50px;
     }
         
@@ -398,12 +504,40 @@ option{
 
 @media (max-width: 470px){
 
+    
+    .btn-menu{
+        color: #000000;
+        font-size: 30px;
+    }
+
+    .todo2{
+        font-size: 16px;
+        transform: translate(28px, 60px);  
+    }
+
+    .container-menu{
+        width: 120%;
+        height: 48vh;
+    }
+
+    .cont-menu{
+        width: 130%;
+        height: 48vh;
+    }
+
+    .cel1{
+        margin:0px auto;
+        width: 80%; 
+        margin-bottom: 50px;
+    }
+
     .IgTit{
         font-size: 20px;
     }
 
     .bar-btn{
-        margin-left: 30px;
+        padding-top: 10px;
+        margin-left: 20px;
     }
 
     .cuadradoInt{
@@ -416,7 +550,7 @@ option{
     }
 
     .Foto{
-        height: 300px;
+        height: 330px;
     }
 
     .form1{
