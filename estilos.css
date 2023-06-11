@@ -6,6 +6,10 @@
     list-style: none;
 }
 
+html{
+    scroll-behavior: smooth;
+  }
+
 .Foto{
     margin-top: 6%;
     transform: translate(0px, 10%);
@@ -30,10 +34,18 @@ tit{
     font-size: 23px;
 }
 
+.espacio{
+    margin-top: 100px;
+}
+
+header{
+    
+}
+
 /* Menu */ 
 
 .btn-menu{
-    text-shadow: 1px 1px 1px #df5ea7;
+    text-shadow: 1px 1px 1px #b75998;
 }
 
 #btn-menu{
@@ -56,7 +68,7 @@ tit{
 .cont-menu{
     width: 125%;
     max-width: 250px;
-    background: #b465a3;
+    background: #b75998;
     height: 77vh;
     position: relative;
     transition: all 500ms ease;
@@ -90,10 +102,28 @@ tit{
 
 /* Fin del Menu */
 
+/* Boton para subir */
+
+.gotopbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #b75998;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+}
+
+/* Fin de Boton para subir */
+
 .TituloTienda{
     font-size: 30px;
-    padding-top: 30px;
-    padding-right: 8%; 
+    padding-top: 40px;
+    padding-right: 7.8%; 
 }
 
 body{
@@ -102,6 +132,7 @@ body{
 }
 
 .inicio{
+    background-color: #fae5f1;
     transform: translate(0px, -15%);
     border-bottom: 5px solid #000000;
     /* background-color: rgb(226, 226, 226); */
@@ -137,7 +168,7 @@ body{
     width: 330px;
     border-radius: 10px;
     /*float: left;*/
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .img1{
@@ -277,7 +308,7 @@ option{
 
     .cel1{
         margin: 2%; 
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
 
     .info{
@@ -344,7 +375,7 @@ option{
 
     .cel1{
         margin: 0.5%; 
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
 
     .Foto{
@@ -385,6 +416,10 @@ option{
 
 @media (max-width: 730px){
 
+    .espacio{
+        margin-top: 0px;
+    }
+
     .todo2{
         font-size: 25px;
         transform: translate(25px, 60px);  
@@ -417,8 +452,12 @@ option{
 
 @media (max-width: 600px){
 
+    .gotopbtn{
+        transform: translate(30px, 0px);
+    }
+
     tit{
-        color: #fff;
+        color:#fae5f1;
         text-shadow: none;
     }
 
@@ -434,12 +473,12 @@ option{
 
     .container-menu{
         width: 120%;
-        height: 48vh;
+        height: 50vh;
     }
 
     .cont-menu{
         width: 130%;
-        height: 48vh;
+        height: 50vh;
     }
 
     .bar-btn{
@@ -456,7 +495,7 @@ option{
     }
 
     .Foto{
-        height: 350px;
+        height: 410px;
     }
 
     .info{
@@ -466,7 +505,7 @@ option{
         
     .cel1{
         margin:0px auto; 
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
         
     .cuadrado1{
@@ -528,7 +567,7 @@ option{
     .cel1{
         margin:0px auto;
         width: 80%; 
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
 
     .IgTit{
@@ -556,4 +595,16 @@ option{
     .form1{
         margin-left: 325px;
         }
+}
+
+@media (max-width:470px) and (max-height: 667px){
+    .container-menu{
+        width: 120%;
+        height: 65vh;
+    }
+    
+    .cont-menu{
+        width: 130%;
+        height: 65vh;
+    }
 }
