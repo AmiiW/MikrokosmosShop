@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+body{
+    background-image: url("TiendaObjetos/Tienda00.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.Info{
+    background-color: #000000af;
+    margin: 7%;
+    padding: 6%;
+    border-radius: 25px;
+    box-shadow: 1px 1px 40px rgb(255, 255, 255);
+}
+
+.imagen{
+    transform: translate(100px, -32%);
+    position: absolute;
+    width: 450px;
+}
+
+.Letras{
+    padding-top: 6%;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+
+}
