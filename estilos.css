@@ -367,6 +367,10 @@ body{
     
 }
 
+.presentacion{
+    font-size: 20px;
+}
+
 .cel1{
     display: inline-block;
     margin: 40px;
@@ -483,16 +487,16 @@ option{
 }
 
 .boton{
-    background-color: #eb7177;
-    font-size: 16px;
-    height: 35px;
-    width: 90px;
+    background-color: #b75998;
+    font-size: 18px;
+    height: 47px;
+    width: 155px;
     margin-bottom: 25px;
     transition: .5s ease all;
 }
 
 .boton:hover{
-    height: 30px;
+    height: 40px;
     background: #6093ff;
 }
 
