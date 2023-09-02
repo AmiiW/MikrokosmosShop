@@ -487,17 +487,18 @@ option{
 }
 
 .boton{
+    margin-top: 80px;
     background-color: #b75998;
-    font-size: 18px;
-    height: 47px;
-    width: 155px;
+    font-size: 21px;
+    height: 65px;
+    width: 290px;
     margin-bottom: 25px;
     transition: .5s ease all;
 }
 
 .boton:hover{
-    height: 40px;
-    background: #6093ff;
+    height: 55px;
+    background: #fc80f1;
 }
 
 .buttom:hover{
